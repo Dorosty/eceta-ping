@@ -22,8 +22,8 @@ notify = ->
 
 do check = ->
   req = http.request url.parse('http://eceta.ut.ac.ir'), ->
-    setTimeout check
+    setTimeout check, 60 * 1000
   req.on 'error', ->
     notify()
-    setTimeout check
+    setTimeout check, 60 * 1000
   req.end()
