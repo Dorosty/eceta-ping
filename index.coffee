@@ -5,9 +5,9 @@ nodemailer = require 'nodemailer'
 notify = ->
   [
     {name: 'Ali Dorosty', email: 'ma.dorosty@gmail.com'}
-    # {name: 'Dr. Khosravi', email: 'ramtung@gmail.com'}
-    # {name: 'Dr. Khosravi', email: 'r.khosravi@ut.ac.ir'}
-    # {name: 'Mr. Razzagh', email: 'hrazzagh@gmail.com'}
+    {name: 'Dr. Khosravi', email: 'ramtung@gmail.com'}
+    {name: 'Dr. Khosravi', email: 'r.khosravi@ut.ac.ir'}
+    {name: 'Mr. Razzagh', email: 'hrazzagh@gmail.com'}
   ].forEach ({name, email}) ->
     nodemailer.createTransport
       host: 'mail.ut.ac.ir',
